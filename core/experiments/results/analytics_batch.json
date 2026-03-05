@@ -1,0 +1,227 @@
+{
+  "dsr": {
+    "method": "Bailey_LopezDePrado_2014",
+    "N_experiments": 63,
+    "T_trades_holdout": 177,
+    "sr_per_trade": 0.991732,
+    "std_r": 1.265564,
+    "skew": -1.272239,
+    "kurtosis": 2.618793,
+    "sensitivity": {
+      "28": {
+        "N": 28,
+        "E_max_SR_per_trade": 0.153696,
+        "DSR": 1.0
+      },
+      "55": {
+        "N": 55,
+        "E_max_SR_per_trade": 0.173825,
+        "DSR": 1.0
+      },
+      "63": {
+        "N": 63,
+        "E_max_SR_per_trade": 0.177654,
+        "DSR": 1.0
+      },
+      "100": {
+        "N": 100,
+        "E_max_SR_per_trade": 0.190212,
+        "DSR": 1.0
+      }
+    }
+  },
+  "buy_and_hold": {
+    "holdout_period": "2025-02-28 to 2026-02-28",
+    "holdout_years": 1.0,
+    "btc_regime": "BEAR",
+    "strategy": {
+      "return_pct": 252.58,
+      "ann_return_pct": 252.58,
+      "daily_sharpe_ann": 10.7149,
+      "lo_adj_sharpe_ann": 14.0517,
+      "max_dd_pct": 4.65,
+      "n_trades": 177
+    },
+    "btc_buy_and_hold": {
+      "return_pct": -20.6,
+      "ann_return_pct": -23.06,
+      "ann_vol_pct": 46.16,
+      "sharpe_ann": -0.4996
+    },
+    "excess_return_pct": 273.17
+  },
+  "treynor_mazuy": {
+    "n_days": 1520,
+    "alpha": 0.01071985,
+    "beta": 0.039024,
+    "gamma": -0.302905,
+    "alpha_se": 0.00076685,
+    "beta_se": 0.022008,
+    "gamma_se": 0.291407,
+    "alpha_t": 13.9791,
+    "beta_t": 1.7731,
+    "gamma_t": -1.0395,
+    "alpha_p": 0.0,
+    "beta_p": 0.076407,
+    "gamma_p": 0.298758,
+    "r_squared": 0.002569,
+    "capm_alpha": 0.01040812,
+    "capm_beta": 0.036827,
+    "timing_significant_5pct": false,
+    "alpha_significant_5pct": true
+  },
+  "horizon_expiry": {
+    "n_trades_analyzed": 750,
+    "n_target_hit": 473,
+    "n_stop_hit": 274,
+    "n_expired": 3,
+    "pct_target_hit": 63.07,
+    "pct_stop_hit": 36.53,
+    "pct_expired": 0.4
+  },
+  "shap_rank_correlation": {
+    "n_folds": 9,
+    "n_features": 64,
+    "mean_rho": 0.8168,
+    "median_rho": 0.8502,
+    "min_rho": 0.5638,
+    "max_rho": 0.9805,
+    "std_rho": 0.1293,
+    "n_pairs": 36,
+    "most_stable_features": [
+      {
+        "feature": "ote_dist_from_705_atr",
+        "cv": 0.0404,
+        "mean_abs_shap": 0.060299
+      },
+      {
+        "feature": "ict_ob_bull_age",
+        "cv": 0.0505,
+        "mean_abs_shap": 0.173213
+      },
+      {
+        "feature": "clv",
+        "cv": 0.0526,
+        "mean_abs_shap": 0.097214
+      },
+      {
+        "feature": "swing_low_price",
+        "cv": 0.0669,
+        "mean_abs_shap": 0.128185
+      },
+      {
+        "feature": "m15_ict_ob_bull",
+        "cv": 0.0671,
+        "mean_abs_shap": 0.058202
+      },
+      {
+        "feature": "ict_ob_bear_age",
+        "cv": 0.0727,
+        "mean_abs_shap": 0.143408
+      },
+      {
+        "feature": "ict_swing_low_price",
+        "cv": 0.0774,
+        "mean_abs_shap": 0.045042
+      },
+      {
+        "feature": "ict_fvg_bear_recent_age",
+        "cv": 0.0786,
+        "mean_abs_shap": 0.065207
+      },
+      {
+        "feature": "h1_ict_ob_bull",
+        "cv": 0.0795,
+        "mean_abs_shap": 0.042499
+      },
+      {
+        "feature": "m30_ict_premium",
+        "cv": 0.0871,
+        "mean_abs_shap": 0.059949
+      }
+    ]
+  },
+  "pre_post_etf": {
+    "etf_date": "2024-01-10",
+    "pre_etf": {
+      "n_trades": 545,
+      "win_rate": 0.6183,
+      "ev_r": 0.805,
+      "profit_factor": 3.0089,
+      "per_trade_sr": 0.5519
+    },
+    "post_etf": {
+      "n_trades": 205,
+      "win_rate": 0.6732,
+      "ev_r": 0.9695,
+      "profit_factor": 3.8252,
+      "per_trade_sr": 0.6873
+    },
+    "fold_periods": [
+      {
+        "fold": 1,
+        "start_date": "2020-12-31",
+        "end_date": "2021-07-01",
+        "period": "pre_etf"
+      },
+      {
+        "fold": 2,
+        "start_date": "2021-07-01",
+        "end_date": "2021-12-31",
+        "period": "pre_etf"
+      },
+      {
+        "fold": 3,
+        "start_date": "2021-12-31",
+        "end_date": "2022-07-01",
+        "period": "pre_etf"
+      },
+      {
+        "fold": 4,
+        "start_date": "2022-07-01",
+        "end_date": "2022-12-30",
+        "period": "pre_etf"
+      },
+      {
+        "fold": 5,
+        "start_date": "2022-12-30",
+        "end_date": "2023-07-01",
+        "period": "pre_etf"
+      },
+      {
+        "fold": 6,
+        "start_date": "2023-07-01",
+        "end_date": "2023-12-30",
+        "period": "pre_etf"
+      },
+      {
+        "fold": 7,
+        "start_date": "2023-12-30",
+        "end_date": "2024-06-29",
+        "period": "mixed"
+      },
+      {
+        "fold": 8,
+        "start_date": "2024-06-29",
+        "end_date": "2024-12-28",
+        "period": "post_etf"
+      },
+      {
+        "fold": 9,
+        "start_date": "2024-12-28",
+        "end_date": "2025-02-28",
+        "period": "post_etf"
+      }
+    ]
+  },
+  "metadata": {
+    "generated": "2026-03-04T13:08:09.852668",
+    "base_experiment": "D55b_tier1_only",
+    "holdout_experiment": "D55b_holdout",
+    "n_features": 64,
+    "n_oos_trades": 750,
+    "oos_wr": 0.6333,
+    "oos_ev": 0.85,
+    "elapsed_s": 339.1
+  }
+}

@@ -1,0 +1,28 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Data files (too large for git, regenerable from pipelines)
+data/
+core/data/
+
+# Legacy results (large binary files)
+legacy/scripts/results/
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Optuna
+optuna_journal.log
+
+# Claude Code
+.claude/

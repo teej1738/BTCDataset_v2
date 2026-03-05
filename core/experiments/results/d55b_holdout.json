@@ -1,0 +1,128 @@
+{
+  "id": "D55b_holdout",
+  "config": {
+    "base_experiment": "D55b_tier1_only",
+    "features": 64,
+    "feature_exclude": 606,
+    "label": "label_long_hit_2r_48c",
+    "threshold": 0.6,
+    "cooldown": 576,
+    "sizing": {
+      "method": "kelly",
+      "divisor": 40.0,
+      "odds": 2.0
+    },
+    "seed": 42
+  },
+  "train_benchmarks": {
+    "auc": 0.7938,
+    "win_rate": 0.7493,
+    "ev_r": 1.198,
+    "sharpe_ann": 12.29,
+    "max_dd_pct": 7.71,
+    "ece": 0.0197
+  },
+  "holdout_metrics": {
+    "auc": 0.7993412149696347,
+    "auc_raw": 0.7993691947569098,
+    "ece": 0.006281,
+    "ece_raw": 0.127237,
+    "n_trades": 177,
+    "n_signals": 14557,
+    "trades_per_yr": 177.1,
+    "win_rate": 0.7684,
+    "ev_r": 1.2551,
+    "profit_factor": 6.1603,
+    "max_dd_pct": 4.65,
+    "sharpe_ann": 13.1604,
+    "daily_sharpe": 10.714887922734167,
+    "per_bar_sharpe": 13.160325427050283,
+    "final_equity": 352576.76,
+    "holdout_rows": 105121,
+    "holdout_years": 1.0,
+    "mean_risk_pct": 0.015721091232454118,
+    "lo_2002": {
+      "n_days": 366,
+      "autocorrelations": {
+        "1": -0.3162682538052838,
+        "2": 0.34024205092423143,
+        "3": -0.31040199423337694,
+        "4": 0.24239346810943482,
+        "5": -0.2492694498619201,
+        "6": 0.13568576567315568,
+        "7": -0.19019325315529353,
+        "8": 0.11744702899609955,
+        "9": -0.15216945491937708,
+        "10": 0.1149486989898352
+      },
+      "significant_lags": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "bartlett_se": 0.05227083734893167,
+      "q_factor": 0.5814589519775886,
+      "naive_daily_sr": 0.5608428666632025,
+      "adjusted_daily_sr": 0.7354982942865932,
+      "naive_annual_sr": 10.714887922734167,
+      "adjusted_annual_sr": 14.051675182267347,
+      "adjustment_pct": -31.141597407224374
+    },
+    "btc_trend": {
+      "first_close": 84299.6,
+      "last_close": 66937.1,
+      "change_pct": -20.596183137286534,
+      "max_close": 125986.0,
+      "min_close": 60003.9,
+      "above_200sma_pct": 51.24092182764339,
+      "ann_return_pct": -23.062374757157933,
+      "ann_vol_pct": 46.16347608461326,
+      "regime": "BEAR",
+      "start_date": "2025-02-28",
+      "end_date": "2026-02-28"
+    },
+    "daily_sharpe_lo_adj": 14.051675182267347,
+    "lo_q_factor": 0.5814589519775886
+  },
+  "gates": {
+    "AUC": {
+      "value": 0.7993,
+      "threshold": 0.78,
+      "op": ">=",
+      "pass": true
+    },
+    "WIN_RATE": {
+      "value": 0.7684,
+      "threshold": 0.6,
+      "op": ">=",
+      "pass": true
+    },
+    "EV_R": {
+      "value": 1.2551,
+      "threshold": 0.8,
+      "op": ">=",
+      "pass": true
+    },
+    "TRADES": {
+      "value": 177,
+      "threshold": 50,
+      "op": ">=",
+      "pass": true
+    },
+    "DAILY_SHARPE": {
+      "value": 10.7149,
+      "threshold": 0.0,
+      "op": ">",
+      "pass": true
+    }
+  },
+  "verdict": "CONFIRMED CLEAN",
+  "elapsed_s": 307.1
+}

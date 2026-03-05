@@ -1,0 +1,93 @@
+16:18:03  
+============================================================
+16:18:03    Building Master Dataset  (v4)
+16:18:03    Base: perp 5m  |  HTF: ['15m', '30m', '1h', '4h', '1d']
+16:18:03  ============================================================
+
+16:18:03  Loading base timeframe (perp 5m) ...
+16:18:03    Loading perp 5m ...
+16:18:03      648,288 rows, 155 columns
+16:18:03    Base: 648,288 rows
+
+16:18:03  Processing perp 15m ...
+16:18:03    Loading perp 15m ...
+16:18:03      216,096 rows, 155 columns
+16:18:03    Merging 15m -> prefix 'm15_' ...
+16:18:03      Added 49 columns with prefix 'm15_'
+16:18:03    Master now: 204 columns
+
+16:18:03  Processing perp 30m ...
+16:18:03    Loading perp 30m ...
+16:18:03      108,048 rows, 155 columns
+16:18:03    Merging 30m -> prefix 'm30_' ...
+16:18:03      Added 49 columns with prefix 'm30_'
+16:18:03    Master now: 253 columns
+
+16:18:03  Processing perp 1h ...
+16:18:03    Loading perp 1h ...
+16:18:03      54,024 rows, 155 columns
+16:18:03    Merging 1h -> prefix 'h1_' ...
+16:18:03      Added 49 columns with prefix 'h1_'
+16:18:03    Master now: 302 columns
+
+16:18:03  Processing perp 4h ...
+16:18:03    Loading perp 4h ...
+16:18:03      13,506 rows, 155 columns
+16:18:03    Merging 4h -> prefix 'h4_' ...
+16:18:03      Added 49 columns with prefix 'h4_'
+16:18:03    Master now: 351 columns
+
+16:18:03  Processing perp 1d ...
+16:18:03    Loading perp 1d ...
+16:18:03      2,251 rows, 155 columns
+16:18:03    Merging 1d -> prefix 'd1_' ...
+16:18:04      Added 49 columns with prefix 'd1_'
+16:18:04    Master now: 400 columns
+
+16:18:04  Merging spot D1 trend ...
+16:18:04    Loading spot 1d ...
+16:18:04      3,118 rows, 144 columns
+16:18:04    Added htf_d1_spot_trend
+
+16:18:04    htf_confluence_score from ['m15_ict_market_trend', 'm30_ict_market_trend', 'h1_ict_market_trend', 'h4_ict_market_trend', 'd1_ict_market_trend']
+16:18:04  
+------------------------------------------------------------
+16:18:04  QA REPORT
+16:18:04  ------------------------------------------------------------
+16:18:04    Rows:      648,288
+16:18:04    Columns:   402
+16:18:04    Date range: 2020-01-01 00:00:00+00:00 -> 2026-02-28 23:55:00+00:00
+16:18:04  
+  NaN % by HTF prefix:
+16:18:04      m15      49 cols    6.8% NaN
+16:18:04      m30      49 cols    7.8% NaN
+16:18:04      h1       49 cols    7.8% NaN
+16:18:04      h4       49 cols    8.2% NaN
+16:18:04      d1       49 cols    8.8% NaN
+16:18:04      htf       2 cols    0.0% NaN
+16:18:04  
+  htf_confluence_score distribution:
+16:18:04      -5:   48,543 (7.5%)
+16:18:04      -3:   87,699 (13.5%)
+16:18:04      -2:      585 (0.1%)
+16:18:04      -1:  131,607 (20.3%)
+16:18:04      +0:      339 (0.1%)
+16:18:04      +1:  132,987 (20.5%)
+16:18:04      +2:      348 (0.1%)
+16:18:04      +3:  125,349 (19.3%)
+16:18:04      +4:    1,839 (0.3%)
+16:18:04      +5:  118,992 (18.4%)
+16:18:04      Range: [-5, 5]
+16:18:04  
+  htf_d1_spot_trend: 0.0% NaN
+16:18:04  
+Saving parquet -> C:\Users\tjall\Desktop\Trading\BTCDataset_v2\data\master\BTCUSDT_MASTER.parquet
+16:18:08    Done. Size: 249.8 MB
+16:18:08    Metadata -> C:\Users\tjall\Desktop\Trading\BTCDataset_v2\data\master\BTCUSDT_MASTER_metadata.json
+16:18:08  
+============================================================
+16:18:08    Master dataset complete.
+16:18:08    648,288 rows × 402 columns
+16:18:08    249.8 MB parquet
+16:18:08  ============================================================
+

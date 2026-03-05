@@ -1,0 +1,48 @@
+16:16:09  
+============================================================
+16:16:09    Building Master Dataset  (v4)
+16:16:09    Base: perp 5m  |  HTF: ['15m', '30m', '1h', '4h', '1d']
+16:16:09  ============================================================
+
+16:16:09  Loading base timeframe (perp 5m) ...
+16:16:09    Loading perp 5m ...
+16:16:09      648,288 rows, 155 columns
+16:16:09    Base: 648,288 rows
+
+16:16:09  Processing perp 15m ...
+16:16:09    Loading perp 15m ...
+16:16:09      216,096 rows, 155 columns
+16:16:10      Added 49 columns with prefix 'm15_'
+16:16:10    Master now: 204 columns
+
+16:16:10  Processing perp 30m ...
+16:16:10    Loading perp 30m ...
+16:16:10      108,048 rows, 155 columns
+16:16:10      Added 49 columns with prefix 'm30_'
+16:16:10    Master now: 253 columns
+
+16:16:10  Processing perp 1h ...
+16:16:10    Loading perp 1h ...
+16:16:10      54,024 rows, 155 columns
+16:16:10      Added 49 columns with prefix 'h1_'
+16:16:10    Master now: 302 columns
+
+16:16:10  Processing perp 4h ...
+16:16:10    Loading perp 4h ...
+16:16:10      13,506 rows, 155 columns
+16:16:10      Added 49 columns with prefix 'h4_'
+16:16:10    Master now: 351 columns
+
+16:16:10  Processing perp 1d ...
+16:16:10    Loading perp 1d ...
+16:16:10      2,251 rows, 155 columns
+16:16:10      Added 49 columns with prefix 'd1_'
+16:16:10    Master now: 400 columns
+
+16:16:10  Merging spot D1 trend ...
+16:16:10    Loading spot 1d ...
+16:16:10      3,118 rows, 144 columns
+16:16:10    Added htf_d1_spot_trend
+
+16:16:10    htf_confluence_score from ['m15_ict_market_trend', 'm30_ict_market_trend', 'h1_ict_market_trend', 'h4_ict_market_trend', 'd1_ict_market_trend']
+16:16:10    Dropped 453801 duplicate rows

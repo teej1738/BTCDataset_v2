@@ -1,0 +1,78 @@
+2026-03-02 13:53:46,770  INFO      ============================================================
+2026-03-02 13:53:46,770  INFO        BTCDataset v2 - Step 2: Resample
+2026-03-02 13:53:46,770  INFO        Instruments: ['spot', 'perp']
+2026-03-02 13:53:46,770  INFO        Intervals:   ['5m', '15m', '30m', '1h', '4h', '1d']
+2026-03-02 13:53:46,770  INFO        Output:      C:\Users\tjall\Desktop\Trading\BTCDataset_v2\data\resampled
+2026-03-02 13:53:46,771  INFO      ============================================================
+2026-03-02 13:53:46,771  INFO      
+Loading perp supplementary data...
+2026-03-02 13:53:47,264  INFO        Funding: 6,753 events  2020-01-01 00:00:00+00:00 -> 2026-02-28 16:00:00.004000+00:00
+2026-03-02 13:53:47,264  INFO      
+============================================================
+2026-03-02 13:53:47,264  INFO        Resampling: SPOT
+2026-03-02 13:53:47,264  INFO        Intervals:  ['5m', '15m', '30m', '1h', '4h', '1d']
+2026-03-02 13:53:47,265  INFO      ============================================================
+2026-03-02 13:53:47,265  INFO        Loading BTCUSDT_spot_1m_raw.parquet...
+2026-03-02 13:53:47,509  INFO        4,481,119 rows  2017-08-17 04:00:00+00:00 -> 2026-02-28 23:59:00+00:00
+2026-03-02 13:53:47,509  INFO          5m...
+2026-03-02 13:53:47,844  INFO            896,233 bars | complete: 100.0% | cols: 22
+2026-03-02 13:53:48,244  INFO            Saved: BTCUSDT_spot_5m.parquet  (62.1 MB)
+2026-03-02 13:53:48,244  INFO          15m...
+2026-03-02 13:53:48,459  INFO            298,750 bars | complete: 100.0% | cols: 22
+2026-03-02 13:53:48,687  INFO            Saved: BTCUSDT_spot_15m.parquet  (24.0 MB)
+2026-03-02 13:53:48,687  INFO          30m...
+2026-03-02 13:53:48,890  INFO            149,382 bars | complete: 100.0% | cols: 22
+2026-03-02 13:53:49,039  INFO            Saved: BTCUSDT_spot_30m.parquet  (13.8 MB)
+2026-03-02 13:53:49,039  INFO          1h...
+2026-03-02 13:53:49,207  INFO            74,701 bars | complete: 100.0% | cols: 22
+2026-03-02 13:53:49,279  INFO            Saved: BTCUSDT_spot_1h.parquet  (7.2 MB)
+2026-03-02 13:53:49,279  INFO          4h...
+2026-03-02 13:53:49,423  INFO            18,690 bars | complete: 99.7% | cols: 22
+2026-03-02 13:53:49,443  INFO            Saved: BTCUSDT_spot_4h.parquet  (1.8 MB)
+2026-03-02 13:53:49,443  INFO          1d...
+2026-03-02 13:53:49,575  INFO            3,118 bars | complete: 98.9% | cols: 22
+2026-03-02 13:53:49,586  INFO            Saved: BTCUSDT_spot_1d.parquet  (0.3 MB)
+2026-03-02 13:53:49,596  INFO      
+============================================================
+2026-03-02 13:53:49,596  INFO        Resampling: PERP
+2026-03-02 13:53:49,596  INFO        Intervals:  ['5m', '15m', '30m', '1h', '4h', '1d']
+2026-03-02 13:53:49,597  INFO      ============================================================
+2026-03-02 13:53:49,597  INFO        Loading BTCUSDT_perp_1m_raw.parquet...
+2026-03-02 13:53:49,787  INFO        3,241,440 rows  2020-01-01 00:00:00+00:00 -> 2026-02-28 23:59:00+00:00
+2026-03-02 13:53:49,787  INFO          5m...
+2026-03-02 13:53:51,432  INFO            648,288 bars | complete: 100.0% | cols: 33
+2026-03-02 13:53:51,939  INFO            Saved: BTCUSDT_perp_5m.parquet  (80.8 MB)
+2026-03-02 13:53:51,939  INFO          15m...
+2026-03-02 13:53:52,632  INFO            216,096 bars | complete: 100.0% | cols: 33
+2026-03-02 13:53:53,045  INFO            Saved: BTCUSDT_perp_15m.parquet  (31.5 MB)
+2026-03-02 13:53:53,045  INFO          30m...
+2026-03-02 13:53:53,493  INFO            108,048 bars | complete: 100.0% | cols: 33
+2026-03-02 13:53:53,672  INFO            Saved: BTCUSDT_perp_30m.parquet  (17.7 MB)
+2026-03-02 13:53:53,672  INFO          1h...
+2026-03-02 13:53:53,985  INFO            54,024 bars | complete: 100.0% | cols: 33
+2026-03-02 13:53:54,080  INFO            Saved: BTCUSDT_perp_1h.parquet  (8.9 MB)
+2026-03-02 13:53:54,080  INFO          4h...
+2026-03-02 13:53:54,292  INFO            13,506 bars | complete: 100.0% | cols: 33
+2026-03-02 13:53:54,316  INFO            Saved: BTCUSDT_perp_4h.parquet  (2.3 MB)
+2026-03-02 13:53:54,316  INFO          1d...
+2026-03-02 13:53:54,488  INFO            2,251 bars | complete: 100.0% | cols: 33
+2026-03-02 13:53:54,495  INFO            Saved: BTCUSDT_perp_1d.parquet  (0.4 MB)
+2026-03-02 13:53:54,503  INFO      
+============================================================
+2026-03-02 13:53:54,503  INFO        Step 2 complete.
+2026-03-02 13:53:54,503  INFO        Files in C:\Users\tjall\Desktop\Trading\BTCDataset_v2\data\resampled:
+2026-03-02 13:53:54,503  INFO          BTCUSDT_perp_15m.parquet                           31.5 MB
+2026-03-02 13:53:54,504  INFO          BTCUSDT_perp_1d.parquet                             0.4 MB
+2026-03-02 13:53:54,504  INFO          BTCUSDT_perp_1h.parquet                             8.9 MB
+2026-03-02 13:53:54,504  INFO          BTCUSDT_perp_30m.parquet                           17.7 MB
+2026-03-02 13:53:54,504  INFO          BTCUSDT_perp_4h.parquet                             2.3 MB
+2026-03-02 13:53:54,505  INFO          BTCUSDT_perp_5m.parquet                            80.8 MB
+2026-03-02 13:53:54,505  INFO          BTCUSDT_spot_15m.parquet                           24.0 MB
+2026-03-02 13:53:54,505  INFO          BTCUSDT_spot_1d.parquet                             0.3 MB
+2026-03-02 13:53:54,505  INFO          BTCUSDT_spot_1h.parquet                             7.2 MB
+2026-03-02 13:53:54,505  INFO          BTCUSDT_spot_30m.parquet                           13.8 MB
+2026-03-02 13:53:54,506  INFO          BTCUSDT_spot_4h.parquet                             1.8 MB
+2026-03-02 13:53:54,506  INFO          BTCUSDT_spot_5m.parquet                            62.1 MB
+2026-03-02 13:53:54,506  INFO      
+  Next: run scripts/enrich_ict_v4.py
+2026-03-02 13:53:54,506  INFO      ============================================================

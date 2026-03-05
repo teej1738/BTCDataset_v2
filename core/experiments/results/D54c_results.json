@@ -1,0 +1,191 @@
+{
+  "id": "D54c_baseline_short",
+  "status": "DONE",
+  "tier": "standard",
+  "data_version": "v3",
+  "n_features": 670,
+  "label": "label_short_hit_2r_48c",
+  "label_config": null,
+  "threshold": 0.6,
+  "cooldown_bars": 576,
+  "oos_auc": 0.7966,
+  "ece": 0.021858,
+  "ece_raw": 0.120467,
+  "feature_exclude": [],
+  "signal_filter": null,
+  "metrics": {
+    "name": "D54c_baseline_short",
+    "n_trades": 745,
+    "trades_per_yr": 179.0,
+    "win_rate": 0.7315,
+    "ev_r": 1.1446,
+    "profit_factor": 5.0607,
+    "max_dd_pct": 5.47,
+    "sharpe_ann": 11.5103,
+    "final_equity": 12789739337.76
+  },
+  "cscv": {
+    "cscv": {
+      "pbo": 0.0,
+      "n_combos": 70,
+      "n_negative_oos": 0,
+      "oos_mean": 1.1446,
+      "oos_median": 1.1446,
+      "oos_std": 0.0412,
+      "is_oos_correlation": -1.0
+    },
+    "psr": {
+      "psr": 1.0,
+      "sharpe_ratio": 0.8604,
+      "z_score": 16.1818,
+      "n": 745
+    },
+    "bootstrap_ci": {
+      "ci_lower": 1.056,
+      "ci_upper": 1.2372,
+      "ci_level": 0.95,
+      "pct_positive": 100.0
+    },
+    "walk_forward": [
+      {
+        "window": 1,
+        "train_n": 149,
+        "test_n": 93,
+        "train_mean_r": 1.0037,
+        "test_mean_r": 1.1435,
+        "train_pf": 4.03,
+        "test_pf": 5.05,
+        "train_wr": 0.6846,
+        "test_wr": 0.7312
+      },
+      {
+        "window": 2,
+        "train_n": 242,
+        "test_n": 93,
+        "train_mean_r": 1.0574,
+        "test_mean_r": 1.3371,
+        "train_pf": 4.38,
+        "test_pf": 7.23,
+        "train_wr": 0.7025,
+        "test_wr": 0.7957
+      },
+      {
+        "window": 3,
+        "train_n": 335,
+        "test_n": 93,
+        "train_mean_r": 1.1351,
+        "test_mean_r": 1.1435,
+        "train_pf": 4.98,
+        "test_pf": 5.05,
+        "train_wr": 0.7284,
+        "test_wr": 0.7312
+      },
+      {
+        "window": 4,
+        "train_n": 428,
+        "test_n": 93,
+        "train_mean_r": 1.1369,
+        "test_mean_r": 1.1758,
+        "train_pf": 5.0,
+        "test_pf": 5.34,
+        "train_wr": 0.729,
+        "test_wr": 0.7419
+      },
+      {
+        "window": 5,
+        "train_n": 521,
+        "test_n": 93,
+        "train_mean_r": 1.1439,
+        "test_mean_r": 1.1113,
+        "train_pf": 5.05,
+        "test_pf": 4.79,
+        "train_wr": 0.7313,
+        "test_wr": 0.7204
+      },
+      {
+        "window": 6,
+        "train_n": 614,
+        "test_n": 93,
+        "train_mean_r": 1.1389,
+        "test_mean_r": 1.079,
+        "train_pf": 5.01,
+        "test_pf": 4.54,
+        "train_wr": 0.7296,
+        "test_wr": 0.7097
+      },
+      {
+        "window": 7,
+        "train_n": 707,
+        "test_n": 38,
+        "train_mean_r": 1.131,
+        "test_mean_r": 1.3974,
+        "train_pf": 4.95,
+        "test_pf": 8.22,
+        "train_wr": 0.727,
+        "test_wr": 0.8158
+      }
+    ]
+  },
+  "gates": {
+    "MIN_TRADES_PER_YEAR": {
+      "threshold": 100,
+      "value": 179.0,
+      "pass": true
+    },
+    "MIN_OOS_AUC": {
+      "threshold": 0.75,
+      "value": 0.7966253143355739,
+      "pass": true
+    },
+    "MAX_PBO": {
+      "threshold": 0.05,
+      "value": 0.0,
+      "pass": true
+    },
+    "MIN_PSR": {
+      "threshold": 0.99,
+      "value": 1.0,
+      "pass": true
+    },
+    "MIN_WF_WINDOWS": {
+      "threshold": "all",
+      "value": true,
+      "pass": true
+    },
+    "MIN_SHARPE": {
+      "threshold": 2.0,
+      "value": 11.5103,
+      "pass": true
+    },
+    "MIN_WR": {
+      "threshold": 0.55,
+      "value": 0.7315,
+      "pass": true
+    },
+    "MIN_EV_R": {
+      "threshold": 0.5,
+      "value": 1.1446,
+      "pass": true
+    },
+    "MAX_DRAWDOWN": {
+      "threshold": 0.2,
+      "value": 0.0547,
+      "pass": true
+    },
+    "MAX_ECE": {
+      "threshold": 0.05,
+      "value": 0.021858,
+      "pass": true
+    }
+  },
+  "n_gates_pass": 10,
+  "n_gates_total": 10,
+  "wf_all_profitable": true,
+  "sizing": {
+    "method": "kelly",
+    "divisor": 40.0,
+    "odds": 2.0
+  },
+  "elapsed_sec": 962.5,
+  "notes": "D54c: clean short baseline on v3_train with D53 ICT features. E004_short_baseline equivalent. 288-bar embargo, label purging. All features (no prune list)."
+}

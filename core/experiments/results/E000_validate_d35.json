@@ -1,0 +1,184 @@
+{
+  "id": "E000_validate_d35",
+  "status": "DONE",
+  "data_version": "v2",
+  "label": "label_long_hit_2r_48c",
+  "threshold": 0.6,
+  "cooldown_bars": 576,
+  "oos_auc": 0.7935,
+  "ece": 0.124797,
+  "metrics": {
+    "name": "E000_validate_d35",
+    "n_trades": 928,
+    "trades_per_yr": 179.7,
+    "win_rate": 0.6541,
+    "ev_r": 0.9123,
+    "profit_factor": 3.5118,
+    "max_dd_pct": 11.96,
+    "sharpe_ann": 8.5658,
+    "final_equity": 133931100069.7
+  },
+  "cscv": {
+    "cscv": {
+      "pbo": 0.0,
+      "n_combos": 70,
+      "n_negative_oos": 0,
+      "oos_mean": 0.9123,
+      "oos_median": 0.9123,
+      "oos_std": 0.0446,
+      "is_oos_correlation": -1.0
+    },
+    "psr": {
+      "psr": 1.0,
+      "sharpe_ratio": 0.639,
+      "z_score": 16.1154,
+      "n": 928
+    },
+    "bootstrap_ci": {
+      "ci_lower": 0.8185,
+      "ci_upper": 1.0028,
+      "ci_level": 0.95,
+      "pct_positive": 100.0
+    },
+    "walk_forward": [
+      {
+        "window": 1,
+        "train_n": 185,
+        "test_n": 116,
+        "train_mean_r": 0.8635,
+        "test_mean_r": 0.8638,
+        "train_pf": 3.27,
+        "test_pf": 3.27,
+        "train_wr": 0.6378,
+        "test_wr": 0.6379
+      },
+      {
+        "window": 2,
+        "train_n": 301,
+        "test_n": 116,
+        "train_mean_r": 0.8636,
+        "test_mean_r": 0.8121,
+        "train_pf": 3.27,
+        "test_pf": 3.04,
+        "train_wr": 0.6379,
+        "test_wr": 0.6207
+      },
+      {
+        "window": 3,
+        "train_n": 417,
+        "test_n": 116,
+        "train_mean_r": 0.8493,
+        "test_mean_r": 0.8897,
+        "train_pf": 3.2,
+        "test_pf": 3.4,
+        "train_wr": 0.6331,
+        "test_wr": 0.6466
+      },
+      {
+        "window": 4,
+        "train_n": 533,
+        "test_n": 116,
+        "train_mean_r": 0.8581,
+        "test_mean_r": 0.9931,
+        "train_pf": 3.25,
+        "test_pf": 3.97,
+        "train_wr": 0.636,
+        "test_wr": 0.681
+      },
+      {
+        "window": 5,
+        "train_n": 649,
+        "test_n": 116,
+        "train_mean_r": 0.8822,
+        "test_mean_r": 0.9672,
+        "train_pf": 3.36,
+        "test_pf": 3.81,
+        "train_wr": 0.6441,
+        "test_wr": 0.6724
+      },
+      {
+        "window": 6,
+        "train_n": 765,
+        "test_n": 116,
+        "train_mean_r": 0.8951,
+        "test_mean_r": 1.1483,
+        "train_pf": 3.42,
+        "test_pf": 5.09,
+        "train_wr": 0.6484,
+        "test_wr": 0.7328
+      },
+      {
+        "window": 7,
+        "train_n": 881,
+        "test_n": 47,
+        "train_mean_r": 0.9284,
+        "test_mean_r": 0.6096,
+        "train_pf": 3.6,
+        "test_pf": 2.3,
+        "train_wr": 0.6595,
+        "test_wr": 0.5532
+      }
+    ]
+  },
+  "gates": {
+    "MIN_TRADES_PER_YEAR": {
+      "threshold": 100,
+      "value": 179.7,
+      "pass": true
+    },
+    "MIN_OOS_AUC": {
+      "threshold": 0.75,
+      "value": 0.7935492858773806,
+      "pass": true
+    },
+    "MAX_PBO": {
+      "threshold": 0.05,
+      "value": 0.0,
+      "pass": true
+    },
+    "MIN_PSR": {
+      "threshold": 0.99,
+      "value": 1.0,
+      "pass": true
+    },
+    "MIN_WF_WINDOWS": {
+      "threshold": "all",
+      "value": true,
+      "pass": true
+    },
+    "MIN_SHARPE": {
+      "threshold": 2.0,
+      "value": 8.5658,
+      "pass": true
+    },
+    "MIN_WR": {
+      "threshold": 0.55,
+      "value": 0.6541,
+      "pass": true
+    },
+    "MIN_EV_R": {
+      "threshold": 0.5,
+      "value": 0.9123,
+      "pass": true
+    },
+    "MAX_DRAWDOWN": {
+      "threshold": 0.2,
+      "value": 0.11960000000000001,
+      "pass": true
+    },
+    "MAX_ECE": {
+      "threshold": 0.05,
+      "value": 0.124797,
+      "pass": false
+    }
+  },
+  "n_gates_pass": 9,
+  "n_gates_total": 10,
+  "wf_all_profitable": true,
+  "sizing": {
+    "method": "fixed",
+    "risk_pct": 0.02
+  },
+  "elapsed_sec": 1.0,
+  "notes": "D40 validation: reproduce D35 through engine (no retraining)"
+}

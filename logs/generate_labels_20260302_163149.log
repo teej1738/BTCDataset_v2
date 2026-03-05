@@ -1,0 +1,94 @@
+16:31:49  
+============================================================
+16:31:49    Label Generation  (v2 -- triple-barrier)
+16:31:49    Horizons: [12, 24, 48, 96, 288]  |  R-multiples: [np.float64(1.0), np.float64(2.0), np.float64(3.0)]
+16:31:49    SL = 1 x ict_atr_14  |  TP = R x ict_atr_14
+16:31:49  ============================================================
+
+16:31:49  Loading master dataset ...
+16:31:49    648,288 rows x 402 columns
+
+16:31:49  Generating labels ...
+16:31:49    Horizon 12 (1h) -- 648,276 labelable rows ...
+16:31:49      1R long  win-rate: 0.480
+16:31:49      1R short win-rate: 0.488
+16:31:49      2R long  win-rate: 0.264
+16:31:49      2R short win-rate: 0.273
+16:31:49      3R long  win-rate: 0.141
+16:31:49      3R short win-rate: 0.150
+16:31:49      done in 0.2s
+16:31:49    Horizon 24 (2h) -- 648,264 labelable rows ...
+16:31:49      1R long  win-rate: 0.491
+16:31:49      1R short win-rate: 0.499
+16:31:49      2R long  win-rate: 0.315
+16:31:50      2R short win-rate: 0.322
+16:31:50      3R long  win-rate: 0.204
+16:31:50      3R short win-rate: 0.215
+16:31:50      done in 0.3s
+16:31:50    Horizon 48 (4h) -- 648,240 labelable rows ...
+16:31:50      1R long  win-rate: 0.492
+16:31:50      1R short win-rate: 0.500
+16:31:50      2R long  win-rate: 0.328
+16:31:50      2R short win-rate: 0.334
+16:31:50      3R long  win-rate: 0.238
+16:31:50      3R short win-rate: 0.243
+16:31:50      done in 0.3s
+16:31:50    Horizon 96 (8h) -- 648,192 labelable rows ...
+16:31:50      1R long  win-rate: 0.492
+16:31:50      1R short win-rate: 0.500
+16:31:50      2R long  win-rate: 0.331
+16:31:50      2R short win-rate: 0.336
+16:31:50      3R long  win-rate: 0.248
+16:31:50      3R short win-rate: 0.251
+16:31:50      done in 0.4s
+16:31:50    Horizon 288 (24h) -- 648,000 labelable rows ...
+16:31:51      1R long  win-rate: 0.492
+16:31:51      1R short win-rate: 0.500
+16:31:51      2R long  win-rate: 0.331
+16:31:51      2R short win-rate: 0.337
+16:31:51      3R long  win-rate: 0.249
+16:31:51      3R short win-rate: 0.252
+16:31:51      done in 0.7s
+16:31:51  
+  All labels generated in 1.9s
+16:31:51  
+------------------------------------------------------------
+16:31:51  QA REPORT
+16:31:51  ------------------------------------------------------------
+16:31:51    Rows:          648,288
+16:31:51    Original cols: 402
+16:31:51    Label cols:    45
+16:31:51    Total cols:    447
+16:31:51  
+        Horizon   1R long  1R short   2R long  2R short   3R long  3R short
+16:31:51         --------------------------------------------------------------------
+16:31:51       1h   12c    48.0%    48.8%    26.4%    27.3%    14.1%    15.0%
+16:31:51       2h   24c    49.1%    49.9%    31.5%    32.2%    20.4%    21.5%
+16:31:51       4h   48c    49.2%    50.0%    32.8%    33.4%    23.8%    24.3%
+16:31:51       8h   96c    49.2%    50.0%    33.1%    33.6%    24.8%    25.1%
+16:31:51      24h  288c    49.2%    50.0%    33.1%    33.7%    24.9%    25.2%
+16:31:51  
+  Forward return stats (%):
+16:31:51        12c:  mean=+0.006  std=0.671  median=+0.006  [-23.0, 34.3]
+16:31:51        24c:  mean=+0.013  std=0.935  median=+0.011  [-24.1, 32.6]
+16:31:51        48c:  mean=+0.025  std=1.309  median=+0.019  [-36.0, 32.9]
+16:31:51        96c:  mean=+0.050  std=1.824  median=+0.029  [-38.6, 46.3]
+16:31:51       288c:  mean=+0.149  std=3.186  median=+0.092  [-50.9, 44.9]
+16:31:51  
+  NaN rows per horizon (tail + ATR warmup):
+16:31:51        12c:  25  (0.00%)
+16:31:51        24c:  37  (0.01%)
+16:31:51        48c:  61  (0.01%)
+16:31:51        96c:  109  (0.02%)
+16:31:51       288c:  301  (0.05%)
+16:31:51  
+Saving -> C:\Users\tjall\Desktop\Trading\BTCDataset_v2\data\labeled\BTCUSDT_MASTER_labeled.parquet
+16:31:57    Done. Size: 297.6 MB
+16:31:57    Metadata -> C:\Users\tjall\Desktop\Trading\BTCDataset_v2\data\labeled\BTCUSDT_MASTER_labeled_metadata.json
+16:31:57  
+============================================================
+16:31:57    Labels complete.
+16:31:57    648,288 rows x 447 columns
+16:31:57    45 label columns  |  297.6 MB
+16:31:57  ============================================================
+
